@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p title='John "ShotGun" Nelson'>This is a paragraph.</p>
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, reprehenderit.</b>
+    <br>
+    <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquam.</strong>
+    <br>
+     <i>Lorem ipsum dolor sit amet.</i>    <!-- Italic your text   -->
+    <br>
+     <em>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, animi.</em>   <!--Defines emphasized text    -->
+    <br>
+    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque?</small>       <!-- Defines small text  -->
+    <br>
+    <del>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, beatae!</del>           <!-- Defines Deleted text -->
+    <br>
+    <ins>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repudiandae?</ins>     <!--  Defines Inserted text   -->
+    <br>
+    <sub>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, dignissimos.</sub>     <!-- Defines a subscript text    -->
+    <br>
+    <sup>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, distinctio.</sup>      <!-- Defines superscripted text -->
+    <bdo dir="rtl">This text will be written from right to left</bdo>       <!-- Defines Bi-Directional Override -->
+    <a href="https://www.google.com/" target="_self">page</a>           <!--     Opens in same window -->
+    <a href="https://www.google.com/" target="_blank">page2</a>         <!--     Opens in new window -->
+    <a href="https://www.google.com/" target="_parent">Home</a>         <!--     Opens in same window in parent frame -->
+    <a href="https://www.google.com/" target="_top">page3</a>           <!--     Opens in same window in full window -->
+    <p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p> <!-- The HTML <q> tag defines a short quotation -->
+    <h2>Image Maps</h2>
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<!-- Use the HTML <map> element to define an image map
+Use the HTML <area> element to define the clickable areas in the image map
+Use the HTML usemap attribute of the <img> element to point to an image map
+ -->
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+<!-- There are two main purposes for the <picture> element:
+
+1. Bandwidth
+If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+
+2. Format Support
+Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements. -->
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg" style="width:auto;">
+</picture>
+
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+The browser looks for the first source element where the media query matches the user's current viewport width,
+and fetches the image specified in the srcset attribute.</p>
+
+<p>The img element is required as the last child tag of the picture declaration block.
+The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+</p>
+<!-- A favicon is a small image, so it should be a simple image with high contrast.
+    add a <link> element to your "index.html" file, after the <title> element, like this:
+         -->
+         <xmp><!DOCTYPE html>
+            <html>
+            <head>
+              <title>My Page Title</title>
+              <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+            </head>
+            <body>
+            
+            <h1>This is a Heading</h1>
+            <p>This is a paragraph.</p>
+            
+            </body>
+            </html></xmp>
+<!-- The HTML <iframe> tag specifies an inline frame
+      The src attribute defines the URL of the page to embed
+      Always include a title attribute (for screen readers)
+      The height and width attributes specify the size of the iframe
+      Use border:none; to remove the border around the iframe 
+    -->
+    <h2>Iframe - Target for a Link</h2>
+
+    <iframe width="695" height="391" src="https://www.youtube.com/embed/YTj4855604I" title="Skanda New South 2023 Released Full Hindi Dubbed Action Movie | South Indian Movies Dubbed In Hindi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+<!--
+       Type	                Description
+<input type="text">   	Displays a single-line text input field
+<input type="radio">	  Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit"> 	Displays a submit button (for submitting the form)
+<input type="button">	  Displays a clickable button   
+-->
+<form align="center">
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname" value="A" placeholder="First name">
+  <br>
+  <label for="fname">Last Name:</label><br>
+  <input type="text" id="lname" name="fname" value="A" placeholder="First name">
+  <br>
+  <p>Select your Language:</p>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+  <br>
+  <br>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label> 
+  <br>
+  <select id="cars" name="cars">
+    <option value="volvo">Select options</option>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br>
+  <h2>Visible Option Values</h2>
+
+<p>Use the size attribute to specify the number of visible values.</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="3">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br>
+  <h2>Allow Multiple Selections</h2>
+
+<p>Use the multiple attribute to allow the user to select more than one value.</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br>
+  <h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+  <br><br>
+  <h2>The button Element</h2>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+  <br><br>
+  <h2>The datalist Element</h2>
+  <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <br><br>
+
+  <br>
+  <input type="password" name="pwd" placeholder="password">
+  <br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">        <!-- <input type="reset"> defines a reset button that will reset all form values to their default values:   -->
+</form>
+<!-- 
+  he Action Attribute
+The action attribute defines the action to be performed when the form is submitted.
+
+Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+
+In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data:
+
+Example
+On submit, send form data to "action_page.php":
+ -->
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<!-- 
+  Notes on GET:
+
+Appends the form data to the URL, in name/value pairs
+NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+The length of a URL is limited (2048 characters)
+Useful for form submissions where a user wants to bookmark the result
+GET is good for non-secure data, like query strings in Google 
+-->
+<h2>The method Attribute</h2>
+
+<p>This form will be submitted using the GET method:</p>
+
+<form action="/action_page.php" target="_blank" method="get">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+<!-- 
+  Notes on POST:
+
+Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+POST has no size limitations, and can be used to send large amounts of data.
+Form submissions with POST cannot be bookmarked
+ -->
+ <h2>The method Attribute</h2>
+
+<p>This form will be submitted using the POST method:</p>
+
+<form action="/action_page.php" target="_blank" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.</p>
+<!-- 
+  Tag	            Description
+<form>	      Defines an HTML form for user input
+<input>	      Defines an input control
+<textarea>	  Defines a multiline input control (text area)
+<label>	      Defines a label for an <input> element
+<fieldset>	  Groups related elements in a form
+<legend>	    Defines a caption for a <fieldset> element
+<select>	    Defines a drop-down list
+<optgroup>    Defines a group of related options in a drop-down list
+<option>	    Defines an option in a drop-down list
+<button>	    Defines a clickable button
+<datalist>	  Specifies a list of pre-defined options for input controls
+<output>	    Defines the result of a calculation
+ -->
+<h2>Grouping Form Data with Fieldset</h2>
+
+<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<!-- 
+  <input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+ -->
+
+</body>
+</html>
