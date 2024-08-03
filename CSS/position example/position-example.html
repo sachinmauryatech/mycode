@@ -5,27 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{margin: 0;padding: 0; box-sizing: border-box;}
+        *{margin: 0;padding: 0;}
         .outer{
             margin: 20vh auto;
-            width: 60%;
-            height: 80vh;
-            background-color: rgb(199, 198, 198);
+            width: 50%;
+            height: 100vh;
+            background-color: grey;
             position: relative;
         }
         .inner{ 
-            margin-top: 10vh;
+            margin-top: 20vh;
             margin-left: 25%;
             width: 50%;
-            height: 60vh;
+            height: 70vh;
             background-color: white;
             position: absolute;
+        }
+        .book{
+            width: 60%;
+            height: 40vh;
+            background-color: gray;
+            margin-top: 15vh;
+            margin-left: 20%;
+            border-radius: 5%;
+            position: absolute;
+        }
+        .button{
+            width: 25%;
+            height: 5vh;
+            background-color: gray;
+            margin-top:7vh ;
+            margin-left: -15%;
+            position: absolute;
+            border: 10px solid white;
+            z-index: 1;
+            border-radius: 30%;
+        }
+        .button1{
+            width: 25%;
+            height: 5vh;
+            background-color: gray;
+            margin-top:17.5vh ;
+            margin-left: -15%;
+            position: absolute;
+            border: 10px solid white;
+            z-index: 1;
+            border-radius:30%;
+        }
+        .button2{
+            width: 25%;
+            height: 5vh;
+            background-color: gray;
+            margin-top:28vh ;
+            margin-left: -15%;
+            position: absolute;
+            border: 10px solid white;
+            z-index: 1;
+            border-radius: 30%;
+        }
+        .cover{
+            width: 50%;
+            height: 30vh;
+            margin-top: 5vh;
+            margin-left: 30%;
+            background-color: white;
+            position: relative;
+        }
+        .head
+        {
+            width: 35%;
+            height:7.5vh;
+            background-color: gray;
+            border-radius: 50%;
+            margin-top: 7vh;
+            margin-left: 22.5%;
+            border: 10px solid white;
+            position: absolute;
+            z-index: 1;
+        }
+        .body{
+            width: 60%;
+            height:7.5vh;
+            background-color: gray;
+            border-top-right-radius: 30%;
+            border-top-left-radius: 30%;
+            position: absolute;
+            margin-top: 15vh;
+            margin-left:20%;
         }
     </style>
 </head>
 <body>
     <div class="outer">
-        <div class="inner"></div>
+        <div class="inner">
+            <div class="book">
+                <div class="button"></div>
+                <div class="button1"></div>
+                <div class="button2"></div>
+                <div class="cover">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

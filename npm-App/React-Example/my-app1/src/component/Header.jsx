@@ -1,0 +1,67 @@
+import React from 'react'
+import { NavLink, Link, useNavigate } from 'react-router-dom'
+
+
+const Header = () => {
+    const navigate=useNavigate();
+    const clickHandler=()=>{
+        navigate("./view");
+    }
+    return (
+        <>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <div className="container">
+                    <NavLink className="navbar-brand" to="./">CRUD APP</NavLink>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul className="navbar-nav mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <NavLink className="nav-link active" aria-current="page" to="./">Home</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="./create">Create</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="./view">View</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="./update">upadte</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="./delete">delete</NavLink>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <NavLink className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </NavLink>
+                                <ul className="dropdown-menu">
+                                    <li><NavLink className="dropdown-item" to="#">Action</NavLink></li>
+                                    <li><NavLink className="dropdown-item" to="#">Another action</NavLink></li>
+                                    <li><hr className="dropdown-divider" /></li>
+                                    <li><NavLink className="dropdown-item" to="#">Something else here</NavLink></li>
+                                </ul>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link disabled" aria-disabled="true">Disabled</NavLink>
+                            </li>
+                        </ul>
+                        {/* <form className="d-flex" role="search">
+                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button className="btn btn-outline-success" type="submit">Search</button>
+                        </form> */}
+                    </div>
+                </div>
+            </nav>
+            <hr />
+            <h1 onClick={clickHandler} >Profile</h1>
+            <hr />
+            <button onClick={clickHandler} >Profile</button>
+            <hr />
+            <Link to='./view'>Click here</Link>
+        </>
+    )
+}
+
+export default Header

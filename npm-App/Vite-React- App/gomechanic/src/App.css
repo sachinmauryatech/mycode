@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    text-transform: capitalize;
+  }
+  table{
+    width: 100%;
+  }
+  .head{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .head ul{
+    display: flex;
+    gap: 50px;
+  }
+  .head ul li{
+    list-style: none;
+  }
+  .head ul li Link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+  }
+  .head ul li Link:hover{
+    color: rgb(22, 160, 240);
+  }
+  .head h3{
+    width: 20%;
+    height: 7vh;
+    padding: 1% 2%;
+    background-color: rgb(22, 160, 240);
+  }
+  .head h3 Link{
+    text-decoration: none;
+    color: white;
+  }
+  .head h3 Link:hover{
+    scale: 1.3;
+  }
+  

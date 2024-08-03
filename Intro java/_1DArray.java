@@ -21,7 +21,7 @@ public class _1DArray {
             System.out.println("a" + "[" + i + "]" + " " + "=" + a[i]); // Output pf 1-D Array
         }
         for (int i = 0; i < 6; i++) {
-            System.out.println("a" + "[" + i + "]" + " " + "=" + b[i]); // Output pf 1-D Array
+            System.out.println("b" + "[" + i + "]" + " " + "=" + b[i]); // Output pf 1-D Array
         }
         sc.close();
     }

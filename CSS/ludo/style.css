@@ -73,7 +73,7 @@
     background-color: rgb(255, 255, 255);
 }
 .col-9{
-    width: 280px;
+    width: 279px;
     height: 280px;
     border: 20px solid yellow;
     background-color: yellow;
@@ -88,7 +88,7 @@
     margin-top: 20px;
     margin-left: 20px;
     position: relative;
-    transform: rotate(45deg);
+    transform:rotate(45deg);
 }
 .red{
     width: 50px;

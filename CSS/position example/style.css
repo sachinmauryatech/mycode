@@ -1,0 +1,100 @@
+*{margin: 0;padding: 0;}
+.bg1{background-color: red;}
+.bg2{background-color: green;}
+.bg3{background-color: yellow;}
+.bg4{background-color: orange;}
+.monitor{
+    width: 40%;
+    height: 60vh;
+    background-color: rgb(165, 221, 238);
+    margin-top: 25vh ;
+    margin-left: 30%;
+    border:10px solid rgb(11, 89, 235); 
+    border-radius: 8%;
+    position: relative;
+}
+.stand{
+    width: 5%;
+    height: 7vh;
+    background-color: white;
+    border-left: 10px solid rgb(11, 89, 235);
+    border-right: 10px solid rgb(11, 89, 235);
+    margin-left: 47.5%;
+}
+.pad{
+    width: 14%;
+    height: 2vh;
+    background-color: white;
+    border: 10px solid rgb(11, 89, 235);
+    border-radius: 10%;
+    margin-left: 43%;
+    margin-bottom: 10vh;
+}
+.menu{
+    width: 25%;
+    height: 60vh;
+    background-color: white;
+    border:10px solid rgb(11, 89, 235);
+    position: absolute;
+    margin-top:-11.5vh;
+    margin-left: 37.5%;
+    border-radius: 5%;
+    z-index: 1;
+}
+.label{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    border-top: 10px solid rgb(11, 89, 235);
+    border-bottom: 10px solid rgb(11, 89, 235);
+    position: absolute;
+    margin-top: 48.5vh;
+    border-bottom-left-radius: 30% ;
+    border-bottom-right-radius:30%;
+}
+.label1{
+    width: 100%;
+    height: 5vh;
+    background-color: white;
+    border-bottom: 10px solid rgb(11, 89, 235);
+    position: absolute;
+    border-top-left-radius: 30% ;
+    border-top-right-radius:30%;
+}
+.button{
+    width: 4%;
+    height: 2.5vh; 
+    border: 1px solid red;
+    border-radius: 50%;
+    margin-top: 1vh;
+    margin-left: 5%;
+    position: absolute;
+}
+.button1{
+    width: 4%;
+    height: 2.5vh; 
+    border: 1px solid green;
+    border-radius: 50%;
+    margin-top: 1vh;
+    margin-left: 15%;
+    position: absolute;
+}
+.button2{
+    width: 4%;
+    height: 2.5vh; 
+    border: 1px solid yellow;
+    border-radius: 50%;
+    margin-top: 1vh;
+    margin-left: 25%;
+    position: absolute;
+}
+.circle{
+    width: 3%;
+    height: 3vh;
+    background-color: white;
+    border:10px solid rgb(11, 89, 235); 
+    border-radius: 50%;
+    margin-top: 2vh;
+    margin-left: 46.5%;
+    position: absolute;
+}

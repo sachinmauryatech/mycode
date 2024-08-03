@@ -1,0 +1,43 @@
+body{
+    text-transform: capitalize;
+}
+.head{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.head ul{
+    display: flex;
+    gap: 50px;
+}
+.head ul li{
+    list-style: none;
+}
+.head ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+.head ul li a:hover{
+    color: rgb(22, 160, 240);
+}
+.head h3{
+    width: 20%;
+    height: 7vh;
+    padding: 1% 1%;
+    background-color: rgb(22, 160, 240);
+}
+.head h3 a{
+    text-decoration: none;
+    color: white;
+}
+.head h3 a:hover{
+    scale: 1.3;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

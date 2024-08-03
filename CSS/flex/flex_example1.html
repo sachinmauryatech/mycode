@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .banner{
+            height: 10vh; width: 100%; background-color: yellowgreen;
+        }
+        h1{
+            padding: 1%;
+            color: white;
+        }
+        h2{
+            padding: 1%;
+            color: white;
+        }
+        .navigation{
+            display: flex;
+            justify-content: space-around;
+        }
+        .button{
+            width: 10%; height: 5vh; background-color: rgb(0, 132, 255);
+        }
+        .middle{
+            display: flex;
+            justify-content: space-around;
+        }
+        .block1{width: 50%; height: 60vh; background-color: aqua;}
+        .block2{width: 30%; height: 60vh; background-color: aqua;}
+        .bottom{
+            height: 10vh; width: 100%; background-color: black;
+        }
+        .bottom h1{
+            color: white;
+            text-align: center;
+            padding: 1%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner"><h1>SITE NAME</h1></div>
+        <div class="navigation">
+            <div class="button"><h2>Page1</h2></div>
+            <div class="button"><h2>Page2</h2></div>
+            <div class="button"><h2>Page3</h2></div>
+            <div class="button"><h2>Page4</h2></div>
+        </div>
+        <div class="middle">
+            <div class="block1"><h1>BLOCK</h1></div>
+            <div class="block2"><h1>BLOCK</h1></div>
+        </div>
+        <div class="bottom"><h1>FOTTER</h1></div>
+        
+    </div>
+</body>
+</html>
